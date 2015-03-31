@@ -401,6 +401,18 @@ module.exports = function (grunt) {
       }
     },
 
+
+    replace: {
+      host: {
+        src: ['dist/scripts/*.js'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: 'http://localhost:8003',
+          to: 'http://sparkwaves-env-apg22ebmpm.elasticbeanstalk.com'
+        }]
+      },
+    },
+
     aws: grunt.file.readJSON('aws-keys.json'), // Read the file
 
     aws_s3: {
@@ -502,6 +514,7 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
+    'replace:host',
     'aws_s3:clean',
     'aws_s3:production',
   ]);
