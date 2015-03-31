@@ -1,0 +1,75 @@
+@import "variables";
+
+body, html {
+	background-color: @white;
+  height: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.navbar {
+  background-color: @white;
+  border: none;
+  color: @light-black;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-bottom-border {
+  height:100%;
+  border-bottom: 1px solid @dark-grey;
+}
+
+.navbar-link {
+  font-size: 16px;
+  padding-top: 35px;
+}
+
+.navbar-brand {
+  font-size: 42px;
+  height: 100%;
+}
+
+.brand-orange {
+  color: @orange;
+}
+
+.btn-orange {
+  background-color:@orange;
+  color:@light-grey;
+  border-color: @orange;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color:@dark-orange;
+  color:@light-grey;
+  border-color: @dark-orange;
+}
+
+.main-body {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -40px;
+}
+.footer, .push {
+    height: 40px;
+    margin: 0px;
+}
+
+.footer {
+  padding-top: 30px;
+}
+
+.footer-row > a {
+  color: @black;
+}
+.footer-row > a:hover,
+.footer-row > a:focus {
+  color: @light-black;
+}
+
+.large-font {
+  color: @light-black;
+  font-size: 20px;
+}
