@@ -29,6 +29,18 @@ body, html {
   height: 100%;
 }
 
+@media (max-width: @xs-width) {
+  .navbar-brand {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: @xs-width) {
+  .show-only-in-xs {
+    display: none;
+  }
+}
+
 .brand-orange {
   color: @orange;
 }

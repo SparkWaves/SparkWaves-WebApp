@@ -56,6 +56,16 @@ html {
   font-size: 42px;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 36px;
+  }
+}
+@media (min-width: 767px) {
+  .show-only-in-xs {
+    display: none;
+  }
+}
 .brand-orange {
   color: #f59b2f;
 }

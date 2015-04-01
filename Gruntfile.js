@@ -410,7 +410,7 @@ module.exports = function (grunt) {
           from: 'http://localhost:8003',
           to: 'http://sparkwaves-env-apg22ebmpm.elasticbeanstalk.com'
         }]
-      },
+      }
     },
 
     aws: grunt.file.readJSON('aws-keys.json'), // Read the file
