@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         overwrite: true,                 // overwrite matched source files
         replacements: [{
           from: 'http://localhost:8003',
-          to: 'http://sparkwaves-env-apg22ebmpm.elasticbeanstalk.com'
+          to: 'http://sparkwaves-env-q7g3pzats8.elasticbeanstalk.com'
         }]
       }
     },
