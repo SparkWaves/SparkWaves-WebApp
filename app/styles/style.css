@@ -58,7 +58,7 @@ html {
 }
 @media (max-width: 767px) {
   .navbar-brand {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 @media (min-width: 767px) {
