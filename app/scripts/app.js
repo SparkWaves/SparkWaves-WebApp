@@ -13,11 +13,14 @@ var BASE_URL = 'http://localhost:8003';
 angular
   .module('sparkWavesApp', [
     'ngAnimate',
-    'ngRoute'
+    'ngRoute',
+    'ui.scrollfix',
+    'duScroll'
   ])
   .constant('API_URLS', {
     baseURL: BASE_URL,
     profileURL: BASE_URL + '/api/profiles',
+    lessonURL: BASE_URL + '/api/lessons',
   })
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -26,7 +29,12 @@ angular
         controller: 'MainCtrl'
       })
       .when('/lessons', {
-        templateUrl: 'views/lessons.html',
+        templateUrl: 'views/lessonList.html',
+        controller: 'LessonListCtrl'
+      })
+      .when('/lessons/:lessonId', {
+        templateUrl: 'views/singleLesson.html',
+        controller: 'SingleLessonCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',

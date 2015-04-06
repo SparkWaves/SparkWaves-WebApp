@@ -10,7 +10,6 @@ angular.module('sparkWavesApp')
       .then(function () {
         $location.path('newSignUp');
       }, function (res) {
-        debugger;
         $scope.newProfilFormModel.errors = res.data.email;
       });
     };

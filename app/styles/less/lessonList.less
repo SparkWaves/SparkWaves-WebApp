@@ -1,0 +1,95 @@
+@import "variables";
+
+.title-row{
+  margin-bottom: 10px;
+}
+
+.lesson-container{
+  border: 1px solid @dark-grey;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.lesson-title{
+  font-size: 28px;
+  font-weight: 300;
+  color: @orange;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.lesson-title:hover,
+.lesson-title:focus {
+  color: @dark-orange;
+}
+
+.lesson-count {
+  color: @very-dark-grey;
+}
+
+.lesson-overview-text{
+  font-size: 16px;
+  color: @light-black;
+}
+
+.read-more-link-container{
+  padding-top: 10px;
+}
+
+.read-more-link{
+  color: @light-black;
+  text-decoration: underline;
+}
+
+.read-more-link:hover,
+.read-more-link:focus {
+  color: @dark-orange;
+}
+// Left nav
+.left-nav{
+  padding-left: 20px;
+}
+
+.left-nav.ui-scrollfix {
+  position:fixed;
+  top:20px;
+}
+
+.left-nav-header-title{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ul.nav-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+ul.nav-list  > li > a{
+  text-decoration: none;
+  color: @light-black;
+}
+
+ul.nav-list > li {
+  padding-left: 7px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+ul.nav-list > li:hover{
+  color: @light-black;
+  border-left: 1px solid @black;
+  padding-left: 6px;
+}
+
+ul.nav-list > li.active{
+  border-left: 2px solid @black;
+  padding-left: 5px;
+}
+
+ul.nav-list > li:hover > a,
+ul.nav-list > li.active > a {
+  color: @black;
+}

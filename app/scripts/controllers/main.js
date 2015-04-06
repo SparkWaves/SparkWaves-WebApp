@@ -2,6 +2,6 @@
 
 
 angular.module('sparkWavesApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function () {
 
   });

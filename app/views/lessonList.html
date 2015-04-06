@@ -1,0 +1,49 @@
+<div ng-init="getLessons()">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="lesson-container" id="lesson-{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
+        <div class="title-row">
+          <span>
+            <a class="lesson-title" href="lessons/{{lesson.id}}">{{ lesson.title }}</a>
+          </span>
+          <span class="pull-right text-muted lesson-count">
+            Lesson {{$index + 1}}
+          </span>
+        </div>
+        <div class="row">
+
+          <div class="col-md-7 lesson-overview-text">
+            {{ lesson.overview|truncate:300 }}
+            <div class="read-more-link-container">
+              <a class="read-more-link" href="lessons/{{lesson.id}}">
+              Read more
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <a href="lessons/{{lesson.id}}">
+              <img class="img-responsive img-rounded" ng-src="{{lesson.image}}"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+
+      <div ui-scrollfix="93" class="left-nav">
+        <div class="left-nav-header">
+          <h4 class="page-header left-nav-header-title">Lessons</h4>
+        </div>
+        <ul class="nav-list">
+          <li href="#lesson-{{lesson.id}}" offset="30" du-smooth-scroll du-scrollspy id="{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
+            <a>
+              {{ lesson.title }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>

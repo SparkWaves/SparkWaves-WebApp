@@ -26,9 +26,81 @@ hr.homepage-section-hr {
   padding-top: 10px;
 }
 
-.working-gif {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.title-row {
+  margin-bottom: 10px;
+}
+.lesson-container {
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  padding: 10px;
+}
+.lesson-title {
+  font-size: 28px;
+  font-weight: 300;
+  color: #f59b2f;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.lesson-title:hover,
+.lesson-title:focus {
+  color: #e88310;
+}
+.lesson-count {
+  color: #aaaaaa;
+}
+.lesson-overview-text {
+  font-size: 16px;
+  color: #666666;
+}
+.read-more-link-container {
+  padding-top: 10px;
+}
+.read-more-link {
+  color: #666666;
+  text-decoration: underline;
+}
+.read-more-link:hover,
+.read-more-link:focus {
+  color: #e88310;
+}
+.left-nav {
+  padding-left: 20px;
+}
+.left-nav.ui-scrollfix {
+  position: fixed;
+  top: 20px;
+}
+.left-nav-header-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ul.nav-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+ul.nav-list > li > a {
+  text-decoration: none;
+  color: #666666;
+}
+ul.nav-list > li {
+  padding-left: 7px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+ul.nav-list > li:hover {
+  color: #666666;
+  border-left: 1px solid #272727;
+  padding-left: 6px;
+}
+ul.nav-list > li.active {
+  border-left: 2px solid #272727;
+  padding-left: 5px;
+}
+ul.nav-list > li:hover > a,
+ul.nav-list > li.active > a {
+  color: #272727;
 }
 
 body,
