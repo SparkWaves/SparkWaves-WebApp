@@ -194,14 +194,16 @@ html {
   color: #272727;
   text-transform: capitalize;
 }
+@media (max-width: 767px) {
+  .lesson-title {
+    font-size: 40px;
+  }
+}
 .lesson-overview {
   font-size: 18px;
   color: #666666;
   margin-top: 40px;
   white-space: pre-wrap;
-}
-.resources-row {
-  margin-top: 30px;
 }
 .resource-containter {
   border: 1px solid #e5e5e5;
@@ -222,9 +224,15 @@ html {
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   padding: 3px 5px 3px 5px;
-  margin: 0px 0px 10px 5px;
+  margin: 5px 0px 5px 0px;
   background-color: #f5f5f5;
-  color: very-dark-grey;
+  color: #aaaaaa;
+  float: right;
+}
+@media (max-width: 767px) {
+  .resource-type-text {
+    float: left;
+  }
 }
 .resource-title:hover,
 .resource-title:focus {
