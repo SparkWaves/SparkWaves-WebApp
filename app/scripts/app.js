@@ -15,7 +15,8 @@ angular
     'ngAnimate',
     'ngRoute',
     'ui.scrollfix',
-    'duScroll'
+    'duScroll',
+    'hc.marked',
   ])
   .constant('API_URLS', {
     baseURL: BASE_URL,

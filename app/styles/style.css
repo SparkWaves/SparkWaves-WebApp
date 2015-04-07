@@ -29,28 +29,28 @@ hr.homepage-section-hr {
 .title-row {
   margin-bottom: 10px;
 }
-.lesson-container {
+.lesson-list-container {
   border: 1px solid #e5e5e5;
   margin-top: 20px;
   margin-bottom: 60px;
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 }
-.lesson-title {
+.lesson-list-title {
   font-size: 28px;
   font-weight: 300;
   color: #f59b2f;
   text-transform: capitalize;
   text-decoration: underline;
 }
-.lesson-title:hover,
-.lesson-title:focus {
+.lesson-list-title:hover,
+.lesson-list-title:focus {
   color: #e88310;
 }
-.lesson-count {
+.lesson-list-count {
   color: #aaaaaa;
 }
-.lesson-overview-text {
+.lesson-list-overview-text {
   font-size: 16px;
   color: #666666;
 }
@@ -138,6 +138,11 @@ html {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .hide-in-xs {
+    display: none;
+  }
+}
 .brand-orange {
   color: #f59b2f;
 }
@@ -177,5 +182,52 @@ html {
 .large-font {
   color: #666666;
   font-size: 20px;
+}
+
+.lesson-title {
+  font-size: 60px;
+  color: #272727;
+  text-transform: capitalize;
+}
+.lesson-overview {
+  font-size: 18px;
+  color: #666666;
+  margin-top: 40px;
+  white-space: pre-wrap;
+}
+.resources-row {
+  margin-top: 30px;
+}
+.resource-containter {
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 10px 20px 20px 20px;
+}
+.resource-title {
+  margin-top: 0px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #f59b2f;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.resource-type-text {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 3px 5px 3px 5px;
+  margin: 0px 0px 10px 5px;
+  background-color: #f5f5f5;
+  color: very-dark-grey;
+}
+.resource-title:hover,
+.resource-title:focus {
+  color: #e88310;
+}
+.resource-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666666;
 }
 

@@ -1,4 +1,62 @@
 <div ng-init="getLesson()">
-  <h1>{{ lessonModel.lesson.title }}</h1>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="lesson-title">{{ lessonModel.lesson.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div marked="lessonModel.lesson.overview" class="lesson-overview"></div>
+    </div>
+  </div>
 
+  <div class="row resources-row row">
+    <div class="col-md-8">
+      <div ng-repeat="resource in lessonModel.lesson.resources">
+        <div class="resource-containter">
+          <div class="resource-title-row">
+            <span>
+              <a class="resource-title" target="_blank" href="{{ resource.url }}">{{ resource.title }}</a>
+            </span>
+            <span class="resource-type-text text-muted pull-right">
+              {{ resource.resourceType}}
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 resource-description">
+              {{ resource.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-if="lessonModel.lesson.projects" class="row">
+    <div class="col-md-8">
+      <h4 class="page-header">Projects</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div ng-repeat="project in lessonModel.lesson.projects">
+        <div class="resource-containter">
+          <div class="resource-title-row">
+            <span>
+              <a class="resource-title" target="_blank" href="{{ project.url }}">{{ project.title }}</a>
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-sm-7 resource-description">
+              {{ project.description }}
+            </div>
+            <div class="col-xs-5 hide-in-xs">
+              <a href="{{ project.url }}" target="_blank">
+                <img class="img-responsive img-rounded" ng-src="{{project.image}}"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,18 +1,18 @@
 <div ng-init="getLessons()">
   <div class="row">
     <div class="col-md-9">
-      <div class="lesson-container" id="lesson-{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
+      <div class="lesson-list-container" id="lesson-list-{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
         <div class="title-row">
           <span>
-            <a class="lesson-title" href="lessons/{{lesson.id}}">{{ lesson.title }}</a>
+            <a class="lesson-list-title" href="lessons/{{lesson.id}}">{{ lesson.title }}</a>
           </span>
-          <span class="pull-right text-muted lesson-count">
+          <span class="pull-right text-muted lesson-list-count">
             Lesson {{$index + 1}}
           </span>
         </div>
         <div class="row">
 
-          <div class="col-md-7 lesson-overview-text">
+          <div class="col-md-7 lesson-list-overview-text">
             {{ lesson.overview|truncate:300 }}
             <div class="read-more-link-container">
               <a class="read-more-link" href="lessons/{{lesson.id}}">
@@ -35,7 +35,7 @@
           <h4 class="page-header left-nav-header-title">Lessons</h4>
         </div>
         <ul class="nav-list">
-          <li href="#lesson-{{lesson.id}}" offset="30" du-smooth-scroll du-scrollspy id="{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
+          <li href="#lesson-list-{{lesson.id}}" offset="30" du-smooth-scroll du-scrollspy id="{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
             <a>
               {{ lesson.title }}
             </a>
