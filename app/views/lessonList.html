@@ -1,18 +1,22 @@
 <div ng-init="getLessons()">
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-sm-8">
       <div class="lesson-list-container" id="lesson-list-{{lesson.id}}" ng-repeat="lesson in lessonListModel.lessons">
         <div class="title-row">
           <span>
             <a class="lesson-list-title" href="lessons/{{lesson.id}}">{{ lesson.title }}</a>
           </span>
-          <span class="pull-right text-muted lesson-list-count">
+          <span class="hide-in-xs pull-right text-muted lesson-list-count">
             Lesson {{$index + 1}}
           </span>
         </div>
         <div class="row">
-
-          <div class="col-md-7 lesson-list-overview-text">
+          <div class="col-md-5 col-md-push-7">
+            <a href="lessons/{{lesson.id}}">
+              <img class="img-responsive img-rounded" ng-src="{{lesson.image}}"/>
+            </a>
+          </div>
+          <div class="col-md-7 col-md-pull-5 lesson-list-overview-text">
             {{ lesson.overview|truncate:300 }}
             <div class="read-more-link-container">
               <a class="read-more-link" href="lessons/{{lesson.id}}">
@@ -20,15 +24,11 @@
               </a>
             </div>
           </div>
-          <div class="col-md-5">
-            <a href="lessons/{{lesson.id}}">
-              <img class="img-responsive img-rounded" ng-src="{{lesson.image}}"/>
-            </a>
-          </div>
+
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="hide-in-xs col-sm-4">
 
       <div ui-scrollfix="93" class="left-nav">
         <div class="left-nav-header">
