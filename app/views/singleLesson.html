@@ -12,7 +12,7 @@
 
   <div class="row">
     <div class="col-md-8">
-      <div ng-repeat="resource in lessonModel.lesson.resources">
+      <div ng-repeat="resource in lessonModel.lesson.resources|orderBy:'order'">
         <div class="resource-containter">
           <div class="resource-title-row row">
             <div class="col-sm-10">
@@ -42,7 +42,7 @@
   </div>
   <div class="row">
     <div class="col-md-8">
-      <div ng-repeat="project in lessonModel.lesson.projects">
+      <div ng-repeat="project in lessonModel.lesson.projects|orderBy:'order'">
         <div class="resource-containter">
           <div class="resource-title-row">
             <span>
