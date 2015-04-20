@@ -10,11 +10,6 @@
 .homepage-email-form > button {
   width: 100%;
 }
-.homepage-section-header {
-  margin-top: 0px;
-  margin-bottom: 40px;
-  font-size: 54px;
-}
 .how-it-works-section > i {
   font-size: 60px;
   color: #666666;
@@ -24,6 +19,16 @@ hr.homepage-section-hr {
 }
 .not-ready {
   padding-top: 10px;
+}
+.homepage-section-header {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #666666;
+  font-size: 54px;
+}
+.homepage-section-body {
+  font-size: 16px;
+  color: #666666;
 }
 
 .title-row {
@@ -187,6 +192,28 @@ html {
 .large-font {
   color: #666666;
   font-size: 20px;
+}
+.social-icons {
+  margin-top: 10px;
+  font-size: 60px;
+}
+.github-icon {
+  color: #333;
+}
+.github-icon:hover,
+.github-icon:focus {
+  color: #666;
+}
+.twitter-icon {
+  color: #55acee;
+}
+
+.help-container {
+  border: 1px solid #e5e5e5;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  padding: 10px 20px 10px 20px;
 }
 
 .lesson-title {
